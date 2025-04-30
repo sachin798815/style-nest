@@ -8,6 +8,7 @@ import NoPage from "./pages/noPage/NoPage";
 import ScrollTop from "./components/scrollTop/ScrollTop";
 import ProductInfo from "./pages/productInfo/ProductInfo";
 import CartPage from "./pages/cart/CartPage";
+import Shop from "./pages/shop/Shop";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/*" element={<NoPage/>}/>
           <Route path="/productinfo" element={<ProductInfo/>}/>
           <Route path="/cart" element={<CartPage/>}/>
+          <Route path="/shop" element={<Shop/>}/>
 
         </Routes>
       </Router>
