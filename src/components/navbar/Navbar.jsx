@@ -13,7 +13,7 @@ const Navbar = () => {
 
             {/* All Product */}
             <li>
-                <Link to={'/allproduct'}>Shop</Link>
+                <Link to={'/shop'}>Shop</Link>
             </li>
 
             {/* Signup */}
