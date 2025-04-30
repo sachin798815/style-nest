@@ -18,7 +18,7 @@ const Signup = () => {
                     <input
                         type="text"
                         placeholder='Full Name'
-                        className='bg-violet-50 border border-violet-200 px-2 py-2 w-96 rounded-md outline-none placeholder-violet-200'
+                        className='bg-violet-50 border border-violet-200 px-2 py-2 w-96 rounded-md outline-none placeholder-violet-400'
                     />
                 </div>
 
@@ -27,7 +27,7 @@ const Signup = () => {
                     <input
                         type="email"
                         placeholder='Email Address'
-                        className='bg-violet-50 border border-violet-200 px-2 py-2 w-96 rounded-md outline-none placeholder-violet-200'
+                        className='bg-violet-50 border border-violet-200 px-2 py-2 w-96 rounded-md outline-none placeholder-violet-400'
                     />
                 </div>
 
@@ -36,7 +36,7 @@ const Signup = () => {
                     <input
                         type="password"
                         placeholder='Password'
-                        className='bg-violet-50 border border-violet-200 px-2 py-2 w-96 rounded-md outline-none placeholder-violet-200'
+                        className='bg-violet-50 border border-violet-200 px-2 py-2 w-96 rounded-md outline-none placeholder-violet-400'
                     />
                 </div>
 
