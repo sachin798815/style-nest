@@ -4,7 +4,7 @@ import HeroSection from '../../components/heroSection/HeroSection'
 import Category from '../../components/category/Category'
 import HomePageProductCard from '../../components/homePageProductCard/HomePageProductCard'
 import Track from '../../components/track/Track'
-import Testimonial from '../../components/testimonial/Testimonial'
+import Reviews from '../../components/reviews/Reviews'
 
 export default function HomePage() {
   return (
@@ -13,7 +13,7 @@ export default function HomePage() {
       <Category/>
       <HomePageProductCard/>
       <Track/>
-      <Testimonial/>
+      <Reviews/>
     </Layout>
   )
 }

@@ -1,17 +1,15 @@
-/* eslint-disable react/no-unescaped-entities */
-
-const Testimonial = () => {
+const Reviews = () => {
     return (
         <div>
             <section className="text-gray-600 body-font mb-10">
                 <div className="container px-5 py-10 mx-auto">
-                    <h1 className='text-center text-3xl font-bold text-black'>Testimonial</h1>
+                    <h1 className='text-center text-3xl font-bold text-black'>Reviews</h1>
                     <h2 className='text-center text-2xl font-semibold mb-10'>
                         What our <span className='text-rose-600'>customers</span> are saying
                     </h2>
 
                     <div className="flex flex-wrap -m-4">
-                        {/* Testimonial 1 */}
+                        {/* Review 1 */}
                         <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
                             <div className="h-full text-center">
                                 <img
@@ -28,7 +26,7 @@ const Testimonial = () => {
                             </div>
                         </div>
 
-                        {/* Testimonial 2 */}
+                        {/* Review 2 */}
                         <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
                             <div className="h-full text-center">
                                 <img
@@ -45,7 +43,7 @@ const Testimonial = () => {
                             </div>
                         </div>
 
-                        {/* Testimonial 3 */}
+                        {/* Review 3 */}
                         <div className="lg:w-1/3 lg:mb-0 p-4">
                             <div className="h-full text-center">
                                 <img
@@ -68,4 +66,4 @@ const Testimonial = () => {
     );
 };
 
-export default Testimonial;
+export default Reviews;
