@@ -9,6 +9,8 @@ import ScrollTop from "./components/scrollTop/ScrollTop";
 import ProductInfo from "./pages/productInfo/ProductInfo";
 import CartPage from "./pages/cart/CartPage";
 import Shop from "./pages/shop/Shop";
+import Login from "./pages/registration/Login";
+import Signup from "./pages/registration/SignUp";
 
 export default function App() {
   return (
@@ -21,6 +23,8 @@ export default function App() {
           <Route path="/productinfo" element={<ProductInfo/>}/>
           <Route path="/cart" element={<CartPage/>}/>
           <Route path="/shop" element={<Shop/>}/>
+          <Route path="/signup" element={<Signup/>}/>
+          <Route path="/login" element={<Login/>}/>
 
         </Routes>
       </Router>
