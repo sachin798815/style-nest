@@ -13,6 +13,8 @@ import Login from "./pages/registration/Login";
 import Signup from "./pages/registration/SignUp";
 import UserDashBoard from "./pages/user/UserDashBoard";
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import AddProductPage from "./pages/admin/AddProductPage";
+import UpdateProductPage from "./pages/admin/UpdateProductPage";
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/user-dashboard" element={<UserDashBoard/>}/>
           <Route path="/admin-dashboard" element={<AdminDashboard/>}/>
+          <Route path="/addproduct" element={<AddProductPage/>}/>
+          <Route path="/updateproduct" element={<UpdateProductPage/>}/>
 
         </Routes>
       </Router>
