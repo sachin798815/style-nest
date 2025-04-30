@@ -12,6 +12,7 @@ import Shop from "./pages/shop/Shop";
 import Login from "./pages/registration/Login";
 import Signup from "./pages/registration/SignUp";
 import UserDashBoard from "./pages/user/UserDashBoard";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/user-dashboard" element={<UserDashBoard/>}/>
+          <Route path="/admin-dashboard" element={<AdminDashboard/>}/>
 
         </Routes>
       </Router>
