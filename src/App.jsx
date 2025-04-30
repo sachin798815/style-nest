@@ -11,6 +11,7 @@ import CartPage from "./pages/cart/CartPage";
 import Shop from "./pages/shop/Shop";
 import Login from "./pages/registration/Login";
 import Signup from "./pages/registration/SignUp";
+import UserDashBoard from "./pages/user/UserDashBoard";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/shop" element={<Shop/>}/>
           <Route path="/signup" element={<Signup/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/user-dashboard" element={<UserDashBoard/>}/>
 
         </Routes>
       </Router>
