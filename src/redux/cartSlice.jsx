@@ -1,8 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = JSON.parse(localStorage.getItem('cart')) ?? [];
-// console.log(initialState)
-
 
 export const cartSlice = createSlice({
     name: 'cart',
@@ -12,9 +10,9 @@ export const cartSlice = createSlice({
             state.push(action.payload)
         },
         deleteFromCart(state, action) {
-            return state.filter(item => item.id != action.payload.id);
+            return state.filter(item => item.id !== action.payload.id);
         },
-        incrementQuantity: (state, action) => {
+        incrementQuantity(state, action) {
             state = state.map(item => {
                 if (item.id === action.payload) {
                     item.quantity++;
@@ -22,7 +20,7 @@ export const cartSlice = createSlice({
                 return item;
             });
         },
-        decrementQuantity: (state, action) => {
+        decrementQuantity(state, action) {
             state = state.map(item => {
                 if (item.quantity !== 1) {
                     if (item.id === action.payload) {
@@ -30,13 +28,14 @@ export const cartSlice = createSlice({
                     }
                 }
                 return item;
-
-            })
+            });
         },
+        clearCart: (state) => {
+            return [];
+        }
     },
 })
 
-// Action creators generated for each case reducer function
-export const { addToCart, deleteFromCart, incrementQuantity, decrementQuantity } = cartSlice.actions;
+export const { addToCart, deleteFromCart, incrementQuantity, decrementQuantity, clearCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
