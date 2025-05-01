@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import myContext from "../../context/myContext";
 import toast from "react-hot-toast";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth, fireDB } from "../../firebase/firebaseConfig";
+import { auth, fireDB } from "../../firebase/FirebaseConfig";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import Loader from "../../components/loader/Loader";
 
