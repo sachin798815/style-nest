@@ -19,7 +19,7 @@ import { Toaster } from "react-hot-toast";
 import { ProtectedRouteForUser } from "./protectedRoute/ProtectedRouteForUser";
 import { ProtectedRouteForAdmin } from "./protectedRoute/ProtectedRouteForAdmin";
 import CategoryPage from "./pages/category/CategoryPage";
-import Signup from "./pages/registration/SignUp";
+import Signup from "./pages/registration/Signup";
 
 export default function App() {
   return (
