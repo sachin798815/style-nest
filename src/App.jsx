@@ -10,7 +10,6 @@ import ProductInfo from "./pages/productInfo/ProductInfo";
 import CartPage from "./pages/cart/CartPage";
 import Shop from "./pages/shop/Shop";
 import Login from "./pages/registration/Login";
-import Signup from "./pages/registration/SignUp";
 import UserDashBoard from "./pages/user/UserDashBoard";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AddProductPage from "./pages/admin/AddProductPage";
@@ -20,6 +19,7 @@ import { Toaster } from "react-hot-toast";
 import { ProtectedRouteForUser } from "./protectedRoute/ProtectedRouteForUser";
 import { ProtectedRouteForAdmin } from "./protectedRoute/ProtectedRouteForAdmin";
 import CategoryPage from "./pages/category/CategoryPage";
+import Signup from "./pages/registration/SignUp";
 
 export default function App() {
   return (
