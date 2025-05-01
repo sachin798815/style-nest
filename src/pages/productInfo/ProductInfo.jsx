@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import Layout from "../../components/layout/Layout";
 import myContext from "../../context/myContext";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { fireDB } from "../../firebase/FirebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
 import Loader from "../../components/loader/Loader";
@@ -12,6 +12,7 @@ import toast from "react-hot-toast";
 const ProductInfo = () => {
     const context = useContext(myContext);
     const { loading, setLoading } = context;
+    const navigate=useNavigate();
 
     const [product, setProduct] = useState('')
     // console.log(product)
@@ -152,11 +153,11 @@ const ProductInfo = () => {
                                                 </ul>
                                             </div>
                                             <p className="inline-block text-2xl font-semibold text-gray-700 dark:text-gray-400 ">
-                                                <span className="text-gray-100">₹ {product?.price}</span>
+                                                <span>₹ {product?.price}</span>
                                             </p>
                                         </div>
                                         <div className="mb-6">
-                                            <h2 className="mb-2 text-lg font-bold text-gray-100 dark:text-gray-400">
+                                            <h2 className="mb-2 text-lg font-bold text-gray-700 dark:text-gray-400">
                                                 Description :
                                             </h2>
                                             <p className="text-gray-100">{product?.description}</p>
@@ -168,9 +169,9 @@ const ProductInfo = () => {
                                                 ?
                                                 <button
                                                     onClick={() => deleteCart(product)}
-                                                    className="w-full px-4 py-3 text-center text-white bg-red-500 border-none  hover:bg-red-600 hover:text-gray-100  rounded-xl"
+                                                    className="w-full px-4 py-3 text-center text-white bg-red-500 border-none hover:bg-red-600 hover:text-gray-100  rounded-xl"
                                                 >
-                                                    Delete From cart
+                                                    Delete From Cart
                                                 </button>
                                                 :
                                                 <button
@@ -181,12 +182,14 @@ const ProductInfo = () => {
                                                 </button>
                                             }
                                         </div>
-                                        <div className="flex gap-4 mb-6">
-                                            <button
-                                                className="w-full px-4 py-3 text-center text-gray-100 bg-violet-600 border border-transparent dark:border-gray-700 hover:border-violet-500 hover:text-violet-700 hover:bg-violet-100 rounded-xl"
-                                            >
-                                                Buy now
-                                            </button>
+                                        <div className="flex flex-wrap items-center mb-6">
+                                                <button
+                                                    onClick={() => navigate('/cart')}
+                                                    className="w-full px-4 py-3 text-center text-violet-600 bg-violet-100 border border-violet-600  hover:bg-violet-600 hover:text-gray-100  rounded-xl"
+                                                >
+                                                    Move To Cart
+                                                </button>
+                                            
                                         </div>
                                     </div>
                                 </div>

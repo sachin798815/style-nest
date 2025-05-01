@@ -4,13 +4,14 @@ import OrderDetail from '../../components/admin/OrderDetail';
 import { useContext } from 'react';
 import myContext from '../../context/myContext';
 import UserDetail from '../../components/admin/userDetail';
+import Layout from '../../components/layout/Layout';
 
 const AdminDashboard = () => {
     const user = JSON.parse(localStorage.getItem('users'));
     const context = useContext(myContext);
-    const {getAllProduct,getAllOrder} = context;
+    const {getAllProduct,getAllOrder,getAllUser} = context;
     return (
-        <div>
+        <Layout>
             {/* Top */}
             <div className="top mb-5 px-5 mt-5">
                 <div className=" bg-violet-50 py-5 border border-violet-100 rounded-lg">
@@ -132,7 +133,7 @@ const AdminDashboard = () => {
                                         </svg>
 
                                     </div>
-                                    <h2 className="title-font font-medium text-3xl text-violet-400 fonts1" >10</h2>
+                                    <h2 className="title-font font-medium text-3xl text-violet-400 fonts1" >{getAllUser.length}</h2>
                                     <p className=" text-violet-500  font-bold" >Total Users</p>
                                 </div>
                             </Tab>
@@ -152,7 +153,7 @@ const AdminDashboard = () => {
                     </Tabs>
                 </div>
             </div>
-        </div>
+        </Layout>
     );
 }
 
