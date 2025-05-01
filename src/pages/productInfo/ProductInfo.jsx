@@ -3,11 +3,11 @@ import Layout from "../../components/layout/Layout";
 import myContext from "../../context/myContext";
 import { useNavigate, useParams } from "react-router";
 import { doc, getDoc } from "firebase/firestore";
-import { fireDB } from "../../firebase/FirebaseConfig";
 import Loader from "../../components/loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteFromCart } from "../../redux/cartSlice";
 import toast from "react-hot-toast";
+import { fireDB } from "../../firebase/FirebaseConfig";
 
 const ProductInfo = () => {
     const context = useContext(myContext);
