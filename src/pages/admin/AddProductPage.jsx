@@ -9,28 +9,28 @@ import { fireDB } from "../../firebase/firebaseConfig";
 
 const categoryList = [
     {
-        name: 'fashion'
+        name: 'shirts'
     },
     {
-        name: 'shirt'
-    },
-    {
-        name: 'jacket'
-    },
-    {
-        name: 'mobile'
-    },
-    {
-        name: 'laptop'
+        name: 'jackets'
     },
     {
         name: 'shoes'
     },
     {
-        name: 'home'
+        name: 'dresses'
     },
     {
-        name: 'books'
+        name: 'accessories'
+    },
+    {
+        name: 'pants'
+    },
+    {
+        name: 'homewear'
+    },
+    {
+        name: 'coats'
     }
 ]
 const AddProductPage = () => {
