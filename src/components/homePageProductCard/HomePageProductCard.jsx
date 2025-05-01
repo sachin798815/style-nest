@@ -13,6 +13,7 @@ const HomePageProductCard = () => {
     const { getAllProduct } = context;
 
     const cartItems = useSelector((state) => state.cart);
+    // console.log(cartItems);
     const dispatch = useDispatch();
 
     const addCart = (item) => {
@@ -74,7 +75,7 @@ const HomePageProductCard = () => {
                                                 <button
                                                     onClick={() => deleteCart(item)}
                                                     className=" bg-red-700 hover:bg-red-600 w-full text-white py-[4px] rounded-lg font-bold">
-                                                    Delete To Cart
+                                                    Delete from Cart
                                                 </button>
 
                                                 : 
