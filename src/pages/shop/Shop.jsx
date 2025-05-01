@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import Layout from "../../components/layout/Layout";
-import { useContext } from "react";
+import { useContext,useEffect } from "react";
 import myContext from "../../context/myContext";
 import Loader from "../../components/loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
@@ -75,12 +75,12 @@ const Shop = () => {
                             <button
                               onClick={() => deleteCart(item)}
                               className=" bg-red-700 hover:bg-red-600 w-full text-white py-[4px] rounded-lg font-bold"
-                            ></button>
+                            >Delete From Cart</button>
                           ) : (
                             <button
                               onClick={() => addCart(item)}
                               className=" bg-violet-500 hover:bg-violet-600 w-full text-white py-[4px] rounded-lg font-bold"
-                            ></button>
+                            >Add To Cart</button>
                           )}
                         </div>
                       </div>
