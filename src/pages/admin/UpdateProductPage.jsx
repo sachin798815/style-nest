@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import { Timestamp, doc, getDoc, setDoc } from "firebase/firestore";
 import toast from "react-hot-toast";
 import Loader from "../../components/loader/Loader";
-import { fireDB } from "../../firebase/firebaseConfig";
+import { fireDB } from "../../firebase/FirebaseConfig";
 
 const categoryList = [
     {

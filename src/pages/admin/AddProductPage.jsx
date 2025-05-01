@@ -4,7 +4,7 @@ import myContext from "../../context/myContext";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router";
 import Loader from "../../components/loader/Loader";
-import { fireDB } from "../../firebase/firebaseConfig";
+import { fireDB } from "../../firebase/FirebaseConfig";
 
 
 const categoryList = [

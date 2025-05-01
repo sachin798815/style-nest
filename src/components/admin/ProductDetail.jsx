@@ -4,7 +4,7 @@ import myContext from "../../context/myContext";
 import Loader from "../loader/Loader";
 import { deleteDoc, doc } from "firebase/firestore";
 import toast from "react-hot-toast";
-import { fireDB } from "../../firebase/firebaseConfig";
+import { fireDB } from "../../firebase/FirebaseConfig";
 
 const ProductDetail = () => {
     const context = useContext(myContext);
