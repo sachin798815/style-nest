@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@material-tailwind/react": "^2.1.10",
+    "@reduxjs/toolkit": "^2.7.0",
     "firebase": "^11.6.1",
     "lucide-react": "^0.503.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.5.3",
     "react-tabs": "^6.1.0"
   },
