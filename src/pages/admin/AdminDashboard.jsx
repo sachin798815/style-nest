@@ -3,7 +3,7 @@ import ProductDetail from '../../components/admin/ProductDetail';
 import OrderDetail from '../../components/admin/OrderDetail';
 import { useContext } from 'react';
 import myContext from '../../context/myContext';
-import UserDetail from '../../components/admin/userDetail';
+import UserDetail from '../../components/admin/UserDetail';
 import Layout from '../../components/layout/Layout';
 
 const AdminDashboard = () => {
